@@ -10,12 +10,11 @@ import Features from "./pages/Features";
 import Pricing from "./pages/Pricing";
 import Leaderboard from "./pages/Leaderboard";
 import About from "./pages/About";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms"
 
 function App() {
   return (
-  
-    
-  
     <Routes>
       <Route path="/" element={<Index />}>
         <Route index element={<Home />} />
@@ -27,8 +26,10 @@ function App() {
       </Route>
       <Route path="signup" element={<Signup />} />
       <Route path="login" element={<Login />} />
+      <Route path="privacy" element={<Privacy />} />
+      <Route path="terms" element={<Terms />} />
     </Routes>
-  )
+  );
 }
 
 export default App;

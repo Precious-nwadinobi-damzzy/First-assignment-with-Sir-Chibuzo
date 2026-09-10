@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FirstAssignment() {
   return (
-    <div className="grid grid-cols-3 gap-3 p-2">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 p-2">
       <Box
         Name="Ada Lovelace"
         role="Mathematician"

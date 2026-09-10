@@ -5,7 +5,7 @@ import Footer from "./footer";
 
 export default function Index() {
   return (
-    <div>
+    <div className="bg-gray-200 pb-2">
       <Header />
       <Outlet />
       <Footer />
