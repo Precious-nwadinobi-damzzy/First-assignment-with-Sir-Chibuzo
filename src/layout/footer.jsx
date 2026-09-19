@@ -47,8 +47,8 @@ export default function Footer() {
         </div>
 
         <nav className="flex gap-6 p-4 md:text-[14px] text-[10px]">
-          {Nav.map((q) => (
-            <NavLink key={q} to={q.path} className="px-2 hover:bg-gray-500 hover:px-2 hover:rounded-md">
+          {Nav.map((q, key) => (
+            <NavLink key={key} to={q.path} className="px-2 hover:bg-gray-500 hover:px-2 hover:rounded-md">
               {q.navName}
             </NavLink>
           ))}

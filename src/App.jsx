@@ -7,7 +7,7 @@ import Index from "./layout";
 import Login from "./pages/Login";
 import Faq from "./pages/Faq";
 import Features from "./pages/Features";
-import Pricing from "./pages/Pricing";
+import Posts from "./pages/Posts";
 import Leaderboard from "./pages/Leaderboard";
 import About from "./pages/About";
 import Privacy from "./pages/Privacy";
@@ -21,7 +21,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Faq" element={<Faq />} />
         <Route path="Features" element={<Features />} />
-        <Route path="Pricing" element={<Pricing />} />
+        <Route path="Pricing" element={<Posts />} />
         <Route path="Leaderboard" element={<Leaderboard />} />
       </Route>
       <Route path="signup" element={<Signup />} />

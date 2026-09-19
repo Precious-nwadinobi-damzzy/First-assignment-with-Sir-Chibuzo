@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  /* i added animation class utility and the time for each change */
+  --animate-color-pulse: color-pulse-keyframes 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  /* changing my colors */
+  @keyframes color-pulse-keyframes {
+    0%, 100% {
+      color: #ef4444;
+      opacity: 1;
+    }
+    50% {
+      color: green;
+      opacity: 0.5;
+    }
+  }
+}

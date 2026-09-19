@@ -1,5 +1,5 @@
 import React from "react";
-import FirstAssignment from "../components/firstAssignment";
+import FirstAssignment from "../components/home/firstAssignment";
 import Signup from "./Signup";
 import { NavLink } from "react-router-dom";
 

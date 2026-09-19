@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header
       className="flex justify-between px-8 py-4 items-center
-    text-lg bg-white top-0 sticky"
+    text-lg bg-white top-0 sticky z-50"
     >
       <div className="flex gap-2 text-2xl font-bold items-center">
         <img src="hero.png" alt="" className="w-10" />
@@ -30,7 +30,7 @@ export default function Header() {
           }>FAQ</NavLink>
         <NavLink to="/pricing" className={({ isActive }) =>
             `${isActive ? "text-orange-400" : "text-black"}`
-          }>Pricing</NavLink>
+          }>Posts</NavLink>
         <NavLink to="/leaderboard" className={({ isActive }) =>
             `${isActive ? "text-orange-400" : "text-black"}`
           }>Leaderboard</NavLink>
