@@ -28,7 +28,7 @@ export default function Header() {
         <NavLink to="/faq" className={({ isActive }) =>
             `${isActive ? "text-orange-400" : "text-black"}`
           }>FAQ</NavLink>
-        <NavLink to="/pricing" className={({ isActive }) =>
+        <NavLink to="/Posts" className={({ isActive }) =>
             `${isActive ? "text-orange-400" : "text-black"}`
           }>Posts</NavLink>
         <NavLink to="/leaderboard" className={({ isActive }) =>
