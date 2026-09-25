@@ -18,22 +18,6 @@ export default function Posts() {
     setThumbs(thumbs?.id === id && thumbs?.type === type ? null : { id, type });
   }
 
-  const [count, setCount] = useState({});
-  function handleCount(id, type) {
-    setCount((get) => ({
-      ...get,
-      [id]: {
-        ...get[id],
-        [type]: (get[id]?.[type] || 0) + 1,
-      },
-    }));
-  }
-
-  function action(id, type) {
-    handleThumbs(id, type);
-    handleCount(id, type);
-  }
-
   const { data, isLoading, isError, error } = useQuery({
     queryFn: PriceAPI,
     queryKey: ["pricing"],
@@ -103,7 +87,7 @@ export default function Posts() {
               <div className="flex gap-8">
                 <button
                   className={`flex items-center gap-2 text-[18px] ${thumbs?.id === collect.id && thumbs?.type === "likes" ? "text-blue-500" : ""}`}
-                  onClick={() => action(collect.id, "likes")}
+                  onClick={() => handleThumbs(collect.id, "likes")}
                 >
                   <span>
                     <FaThumbsUp />
@@ -117,7 +101,7 @@ export default function Posts() {
                 <button
                   typeof="button"
                   className={`flex items-center gap-2 text-[18px] ${thumbs?.id === collect.id && thumbs?.type === "dislikes" ? "text-red-500" : ""}`}
-                  onClick={() => action(collect.id, "dislikes")}
+                  onClick={() => handleThumbs(collect.id, "dislikes")}
                 >
                   <span>
                     <FaThumbsDown />
