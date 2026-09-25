@@ -49,8 +49,8 @@ export default function Posts() {
 
   if (isError)
     return (
-      <div>
-        <p>page error {error.message}</p>
+      <div className="text-red-600">
+        <p>page error: {error.message}</p>
       </div>
     );
 
